@@ -1,6 +1,6 @@
 <?php
 
-include("funkcija.php");
+include("log-reg/funkcija.php");
 require "klase/knjiga.php";
 require "konekcija.php"; 
 
