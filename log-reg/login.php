@@ -4,7 +4,7 @@ require 'funkcija.php';
 
 
 if(isset($_SESSION["idkor"])) {
-    header("Location: profilTest.php");
+    header("Location: ../profil/profilpocetna.php");
 }
 
 ?>

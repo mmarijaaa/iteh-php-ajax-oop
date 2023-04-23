@@ -2,7 +2,7 @@
 
 session_start();
 
-include "konekcija.php";
+include "../konekcija.php"; 
 
 if(isset($_POST["action"])) {
     if($_POST["action"] == "register") {
