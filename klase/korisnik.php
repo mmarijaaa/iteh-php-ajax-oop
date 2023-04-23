@@ -1,6 +1,6 @@
 <?php
 
-require "konekcija.php"; 
+require "../konekcija.php"; 
 
 class Korisnik {
     public $idkorisnika;

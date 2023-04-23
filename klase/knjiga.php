@@ -1,6 +1,6 @@
 <?php
 
-require "konekcija.php";
+require "../konekcija.php";
 require "autor.php";
 
 class Knjiga {
@@ -50,55 +50,11 @@ class Knjiga {
 
     public static function ubaciKnjigu($idkorisnika, $idknjige, mysqli $conn){
         $qu = Knjiga::prikaziSveKnjige2($conn, $idknjige);
-        //$izabranaknjiga = mysqli_query($conn, $query);
-        $row  = mysqli_fetch_array($qu);
-        if(is_array($row)){
-            $nazivknjige3 = $row["naziv"]; 
-            $autorknjige3 =$row["imeiprezime"]; 
-            //$naslovnicaknjige3 = $row["naslovnica"]; 
-            $query = "INSERT INTO mojeknjige2 (idkor,idsacuvaneknjige,naz,aut) VALUES ('$idkorisnika','$idknjige','$nazivknjige3','$autorknjige3')";
-            return $conn->query($query); 
-        }
-
-    }
-
-    public static function ubaciKnjigu3($idkorisnika, $idknjige, $kol, $uk, mysqli $conn){
-        $qu = Knjiga::prikaziSveKnjige2($conn, $idknjige);
-        //$izabranaknjiga = mysqli_query($conn, $query);
-        $row  = mysqli_fetch_array($qu);
-        if(is_array($row)){
-            $nazivknjige3 = $row["naziv"]; 
-            $autorknjige3 =$row["imeiprezime"]; 
-            $cenaknjige = $row["cena"];
-            //$naslovnicaknjige3 = $row["naslovnica"]; 
-            $query = "INSERT INTO mojeknjige2 (idkor,idsacuvaneknjige,naz,aut,cena,kolicina,ukupnacena) VALUES ('$idkorisnika','$idknjige','$nazivknjige3','$autorknjige3','$cenaknjige','$kol','$uk')";
-            return $conn->query($query); 
-        }
-
-    }
-
-    public static function ubaciKnjigu2($idkorisnika, $idknjige, mysqli $conn){
-        $qu = Knjiga::prikaziSveKnjige2($conn, $idknjige);
-        //$izabranaknjiga = mysqli_query($conn, $query);
         $row  = mysqli_fetch_array($qu);
         if(is_array($row)){
             $nazivknjige3 = $row["naziv"]; 
             $autorknjige3 =$row["imeiprezime"]; 
             $query = "INSERT INTO mojeknjige2 (idkor,idsacuvaneknjige,naz,aut) VALUES ('$idkorisnika','$idknjige','$nazivknjige3','$autorknjige3')";
-            return $conn->query($query); 
-        }
-
-    }
-
-    public static function ubaciKnjiguUKorpu($idkorisnika, $idknjige, mysqli $conn){
-        $qu = Knjiga::prikaziSveKnjige2($conn, $idknjige); 
-        //$izabranaknjiga = mysqli_query($conn, $query);
-        $row  = mysqli_fetch_array($qu);
-        if(is_array($row)){
-            $nazivknjige3 = $row["naziv"]; 
-            $autorknjige3 =$row["imeiprezime"]; 
-            $naslovnicaknjige3 = $row["naslovnica"];
-            $query = "INSERT INTO mojeknjige (idtrenutnogkorisnika,idsacuvaneknjige,nazivknjige,autorknjige,naslovnicaknjige) VALUES ('$idkorisnika','$idknjige','$nazivknjige3','$autorknjige3','$naslovnicaknjige3')";
             return $conn->query($query); 
         }
 

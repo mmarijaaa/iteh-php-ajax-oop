@@ -17,7 +17,6 @@ require "konekcija.php";
 </head>
 <style>
 
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap'); /*'Montserrat', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap'); /*font-family: 'Kanit', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap'); /*font-family: 'Unbounded', cursive;*/
@@ -255,8 +254,8 @@ footer .copyright h4{
 
         </div>
         <div class="menilogreg">
-            <a href="login.php" class="btnlogin">PRIJAVI SE</a>
-            <a href="registracija.php" class="btnregister">REGISTRUJ SE</a>
+            <a href="log-reg/login.php" class="btnlogin">PRIJAVI SE</a>
+            <a href="log-reg/registracija.php" class="btnregister">REGISTRUJ SE</a>
         </div>
     </div>
 

@@ -341,15 +341,15 @@ footer .copyright h4{
             </div>
         </div>
         <div class="menilinkovi">
-            <a href="3">POČETNA</a>
+            <a href="#">POČETNA</a>
             <a href="pocetnaknjige.php">KNJIGE</a>
             
 
         </div>
         <div class="menilogreg">
             <form method="post" action="">
-                <a href="login.php" id="btnlogin" >PRIJAVI SE</a>
-                <a href="registracija.php" class="btnregister">REGISTRUJ SE</a>
+                <a href="log-reg/login.php" id="btnlogin" >PRIJAVI SE</a>
+                <a href="log-reg/registracija.php" class="btnregister">REGISTRUJ SE</a>
             </form>
         </div>
     </div>
