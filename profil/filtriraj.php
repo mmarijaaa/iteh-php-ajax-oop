@@ -1,8 +1,8 @@
 <?php
 
-require "konekcija.php";
-require "knjiga.php";
-require "zanrklasa.php";
+require "../konekcija.php";
+require "../klase/knjiga.php";
+require "../klase/zanrklasa.php";
 
 if(isset($_POST['request'])) {
 

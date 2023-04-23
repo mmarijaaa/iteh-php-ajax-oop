@@ -1,8 +1,11 @@
 <?php
 
-include("log-reg/funkcija.php");
-require "klase/knjiga.php";
-require "konekcija.php"; 
+/*include("log-reg/funkcija.php");*/
+require "konekcija.php";
+
+$query = "SELECT knjige.idknjige, knjige.autor, knjige.naziv, knjige.opis, knjige.zanr, knjige.naslovnica, autor.idautora, autor.imeiprezime, zanr.idzanra, zanr.nazivzanra  FROM knjige,autor,zanr WHERE knjige.autor=autor.idautora AND knjige.zanr=zanr.idzanra ORDER BY knjige.naziv ASC";
+$listaknjiga =  mysqli_query($conn,$query); 
+
 
 ?>
 
@@ -266,8 +269,7 @@ footer .copyright h4{
         <div class="knjigesve">
 
         <?php
-            $listaknjiga = Knjiga::prikaziSveKnjige($conn);
-            /*$sve_knjige = mysqli_query($conn, "SELECT * FROM knjige");*/
+            //$listaknjiga = Knjiga::prikaziSveKnjige($conn);
             if(mysqli_num_rows($listaknjiga) > 0) { 
                 while($uzmi_knjige = mysqli_fetch_assoc($listaknjiga)) {    
         ?>

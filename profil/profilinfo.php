@@ -298,7 +298,7 @@ label {
     <div class="meni">
         <div class="menilogo">
             <div class="icon">
-                <img src="slike/book.png">
+                <img src="../slike/book.png">
             </div>
             <div class="book">
                 Book
@@ -311,7 +311,7 @@ label {
             <a href="profilpocetna.php">KNJIGE</a>
             <a href="omiljeneknjige.php">OMILJENE</a>
             <div class="dropdown">
-            <a href="#" class="prof"><img src="slike/user.png"><p><?php echo $korisnik["username"]; ?></p></a>
+            <a href="#" class="prof"><img src="../slike/user.png"><p><?php echo $korisnik["username"]; ?></p></a>
                 <div class="dropdown-content">
                     <a href="#">PROFIL</a>
                     <br>
@@ -393,10 +393,10 @@ label {
             </div>
             <div class="dm">
                 <div class="instagram">
-                    <img class="dminsta" src="slike/insta.png" alt="inst">
+                    <img class="dminsta" src="../slike/insta.png" alt="inst">
                 </div>
                 <div class="facebook">
-                    <img class="dmfb" src="slike/fb.png" alt="fb">
+                    <img class="dmfb" src="../slike/fb.png" alt="fb">
                 </div>
             </div>
         </div>
@@ -487,17 +487,18 @@ btn.addEventListener('click', function onClick(event) {
                     req.done(function(res, textStatus, jqXHR){
                     if(res=="Failed"){
                         console.log("Greska prilikom izmene! "+res);
-                    alert("Greska prilikom izmene! ");
+                        alert("Greska prilikom izmene! "); 
+                        $("#infoupdate").load(location.href + " #infoupdate");
                    
-                    }else {
-                    $toHide= checked.closest('tr');
-                    //$toHide.remove();
+                    } else {
+                        $toHide= checked.closest('tr'); 
+                    
+                        console.log('Korisnik izmenjen');
+                        alert("Podaci uspesno izmenjeni!");
 
-                    $("#korisnikprofil").load(location.href + " #korisnikprofil");
-                    $("#infoupdate").load(location.href + " #infoupdate");
-
-                    console.log('Korisnik izmenjen');
-                    alert("Podaci uspesno izmenjeni!");
+                        $("#korisnikprofil").load(location.href + " #korisnikprofil");
+                        $("#infoupdate").load(location.href + " #infoupdate");
+                    
                     }
                     console.log(res);
                     });

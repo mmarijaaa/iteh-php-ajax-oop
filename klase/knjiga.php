@@ -1,7 +1,7 @@
 <?php
 
-require "../konekcija.php";
-require "autor.php";
+require "../konekcija.php"; 
+/*require "autor.php";*/
 
 class Knjiga {
 

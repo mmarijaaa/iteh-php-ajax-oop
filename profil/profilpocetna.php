@@ -359,7 +359,7 @@ footer .copyright h4{
     <div class="meni">
         <div class="menilogo">
             <div class="icon">
-                <img src="slike/book.png">
+                <img src="../slike/book.png">
             </div>
             <div class="book">
                 Book
@@ -372,7 +372,7 @@ footer .copyright h4{
             <a href="#">KNJIGE</a>
             <a href="omiljeneknjige.php">OMILJENE</a>
             <div class="dropdown">
-            <a href="#" class="prof"><img src="slike/user.png"><p><?php echo $korisnik["username"]; ?></p></a>
+            <a href="#" class="prof"><img src="../slike/user.png"><p><?php echo $korisnik["username"]; ?></p></a>
                 <div class="dropdown-content">
                     <a href="profilinfo.php">PROFIL</a>
                     <br>
@@ -386,7 +386,7 @@ footer .copyright h4{
 
     <!-- FILTRACIJA --> 
     <div class="filtriranje">
-        <a href="profilTEST.php">Poništi filter</a> 
+        <a href="profilpocetna.php">Poništi filter</a> 
         <div id="filter">
             <select name="uhvatifilter" id="uhvatifilter">
                 <option value="" disabled="" selected="">Filtriraj po zanru</option>
@@ -475,10 +475,10 @@ footer .copyright h4{
             </div>
             <div class="dm">
                 <div class="instagram">
-                    <img class="dminsta" src="slike/insta.png" alt="inst">
+                    <img class="dminsta" src="../slike/insta.png" alt="inst">
                 </div>
                 <div class="facebook">
-                    <img class="dmfb" src="slike/fb.png" alt="fb">
+                    <img class="dmfb" src="../slike/fb.png" alt="fb">
                 </div>
             </div>
         </div>

@@ -20,13 +20,10 @@ if(isset($_POST["id"])) {
         $status = Korisnik::azurirajKorisnika($conn, $idkor, $ime,$prezime,$username,$email,$lozinka);
     }
     else {
-        echo $lozinkapot;
+        //echo $lozinkapot;
     }
     if ($status){
         echo "Success";
-        echo $ime;
-        echo $prezime;
-        echo $username;
 
     }else{
         echo "Failed";

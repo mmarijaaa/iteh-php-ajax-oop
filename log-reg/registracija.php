@@ -170,7 +170,7 @@ body{
     <div class="meni">
         <div class="menilogo">
             <div class="icon">
-                <img src="slike/book.png">
+                <img src="../slike/book.png">
             </div>
             <div class="book">
                 Book
@@ -180,8 +180,8 @@ body{
             </div>
         </div>
         <div class="menilinkovi">
-            <a href="pocetna.php">POČETNA</a>
-            <a href="pocetnaknjige.php">KNJIGE</a>
+            <a href="../pocetna.php">POČETNA</a>
+            <a href="../pocetnaknjige.php">KNJIGE</a>
             
         </div> 
         <div class="nista">

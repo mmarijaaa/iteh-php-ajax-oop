@@ -1,8 +1,8 @@
 <?php 
 session_start();
-include "konekcija.php";
+include "../konekcija.php";
 //include "mojeknjigeklasa.php";
-include "knjiga.php";
+include "../klase/knjiga.php";
 
 if(isset($_POST["id"])){
     $idknjige = $_POST["id"];
@@ -12,7 +12,7 @@ if(isset($_POST["id"])){
     $odaberi = mysqli_query($conn, "SELECT * FROM mojeknjige2 WHERE mojeknjige2.idsacuvaneknjige = '$idknjige' AND mojeknjige2.idkor = '$idkor'");
     if(mysqli_num_rows($odaberi) > 0) {
         $status = false;
-        echo "Knjiga vec postoji u korpi!";
+        echo "Knjiga vec postoji u listi omiljenih!";
     }
     else 
     {

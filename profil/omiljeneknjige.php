@@ -272,7 +272,7 @@ th,td {
     <div class="meni">
         <div class="menilogo">
             <div class="icon">
-                <img src="slike/book.png">
+                <img src="../slike/book.png">
             </div>
             <div class="book">
                 Book
@@ -285,7 +285,7 @@ th,td {
             <a href="profilpocetna.php">KNJIGE</a>
             <a href="#">OMILJENE</a>
             <div class="dropdown">
-            <a href="#" class="prof"><img src="slike/user.png"><p><?php echo $korisnik["username"]; ?></p></a>
+            <a href="#" class="prof"><img src="../slike/user.png"><p><?php echo $korisnik["username"]; ?></p></a>
                 <div class="dropdown-content">
                     <a href="profilinfo.php">PROFIL</a>
                     <br>
@@ -326,7 +326,7 @@ th,td {
 
             <tr id="ukloniknjigu" class="knjiga">
             <div id="ukloni" class="mojeodabrane">
-                <td><img src="slike/book.png"></td>
+                <td><img src="../slike/book.png"></td>
                 <td>
                     <?php echo $uzmi_knjige2["aut"]; ?>
                 </td>
@@ -338,7 +338,7 @@ th,td {
                     <input type="hidden" name="idknj" value="<?php echo $uzmi_knjige2["idknj"] ?>">
                     <a href="#" class="btnukloni" id="<?php echo $uzmi_knjige2["idknj"]?>" 
                     onclick="ukloni(<?php echo $uzmi_knjige2['idknj']?>)">
-                    <img src="slike/clear.png" id="ukl">
+                    <img src="../slike/clear.png" id="ukl">
                     </a>
 
                 </td>
@@ -371,10 +371,10 @@ th,td {
             </div>
             <div class="dm">
                 <div class="instagram">
-                    <img class="dminsta" src="slike/insta.png" alt="inst">
+                    <img class="dminsta" src="../slike/insta.png" alt="inst">
                 </div>
                 <div class="facebook">
-                    <img class="dmfb" src="slike/fb.png" alt="fb">
+                    <img class="dmfb" src="../slike/fb.png" alt="fb">
                 </div>
             </div>
         </div>
